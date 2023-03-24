@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/main.js"></script>
+    <title>Sushi-Sanctum + IJspaleis</title>
+</head>
+
+<body>
+
+    <header class="big-header">
+        <section class="overlay">
+            <h1>Welkom bij het Sushi-Sanctum+IJspaleis!</h1>
+        </section>
+    </header>
+
+    <main>
+        <article class="searchWrapper">
+            <input id="searchbar-input" type="text" class="searchbar" placeholder="Zoek een gerecht"> 
+            <article class="food-filter">
+                <h2 class="food-categorie"> Categorie</h2>
+                <input type="checkbox" 
+                class="mijn-checkbox" 
+                data-filter="pokebowl"
+                id="pokebowl">
+                <label for="pokebowl">Pokébowl</label>
+
+                <input type="checkbox"
+                class="mijn-checkbox"
+                data-filter="ijs"
+                id="ijs">
+                <label for="ijs">IJs</label>
+
+                <input type="checkbox"
+                class="mijn-checkbox"
+                data-filter="sushi"
+                id="sushi">
+                <label for="sushi">Sushi</label>
+
+                <input type="checkbox"
+                class="mijn-checkbox"
+                data-filter="favoriet"
+                id="favoriet">
+                <label for="favoriet">Favoriet</label>
+            </article>
+        </article>
+
+        <section class="card-container">
+        
+            <header>
+                <h2>
+                    Bekijk ons breed aanbod van sushi en ijs!!
+                </h2>
+            </header>
+    
+            <article class="card" data-category="sushi" data-faved="false">
+                <header>
+                    <h2 class="food-info">Maki Mix</h2>
+                </header> 
+                <figure>
+                    <img src="img/sushimakimix.png" alt="foto van de sushi maki mix">
+                </figure>
+                
+                <section>
+                    <h3>Sushi</h3>
+                    <p class="food-info">Bevat 6x4 stukken sushi: sake maki, tekka maki, kani maki en kappa maki.</p>
+                    <button>Bekijk item</button>
+                    <button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="sushi" data-faved="false">
+                <header>
+                    <h2 class="food-info">Chicken Roll</h2>
+                </header> 
+                <figure>
+                    <img src="img/sushisoftshellchickenroll.png" alt="foto van de sushi soft shell chicken roll">
+                </figure>
+                
+                <section>
+                    <h3>Sushi</h3>
+                    <p class="food-info">Binnenkant: kip. Buitenkant: avocado, teriyakisaus, bosui en sesam</p>
+    
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="sushi" data-faved="false">
+                <header>
+                    <h2 class="food-info">Special Box</h2>
+                </header> 
+                <figure>
+                    <img src="img/sushispecial.png" alt="foto van de special sushi box">
+                </figure>
+                
+                <section>
+                    <h3>Sushi</h3>
+                    <p class="food-info">Bevat 8 Cali roll, 6 sake maki, 2 sake nigiri, 2 ebi nigiri, 2 maguro nigiri.</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="sushi" data-faved="false">
+                <header>
+                    <h2 class="food-info">Zalm Tonijn</h2>
+                </header> 
+                <figure>
+                    <img src="img/sushizalmtonijn.png" alt="foto van de zalm tonijn sushi">
+                </figure>
+                
+                <section>
+                    <h3>Sushi</h3>
+                    <p class="food-info">Bevat 4 California roll, 3 sashimi salmon, 2 saki nigiri, 2 maguro nigiri, 2 zalm nigiri</p>
+                    <button>Bekijk item</button>
+                    <button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="ijs" data-faved="false">
+                <header>
+                    <h2 class="food-info">Chocolate Fudge</h2>
+                </header> 
+                <figure>
+                    <img src="img/ijschocolatefudge.png" alt="foto van de chocolate fudge ijs">
+                </figure>
+                
+                <section>
+                    <h3>IJs</h3>
+                    <p class="food-info">Ben & Jerry's Chocolate Fudge Brownie ijs. Lekker!</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="ijs" data-faved="false">
+                <header>
+                    <h2 class="food-info">Cookie Dough</h2>
+                </header> 
+                <figure>
+                    <img src="img/ijscookiedough.png" alt="foto van de cookie dough ijs">
+                </figure>
+                
+                <section>
+                    <h3>IJs</h3>
+                    <p class="food-info">Ben & Jerry's Cookie Dough IJs. Echte klassieker, yammie!</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="ijs" data-faved="false">
+                <header>
+                    <h2 class="food-info">Strawberry</h2>
+                </header> 
+                <figure>
+                    <img src="img/ijsstrawberrycheesecake.png" alt="foto van de strawberry cheesecake ijs">
+                </figure>
+                
+                <section>
+                    <h3>IJs</h3>
+                    <p class="food-info">Ben & Jerry's Strawberry Cheesecake IJs. Smullen!</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="pokebowls" data-faved="false">
+                <header>
+                    <h2 class="food-info">Ebi Tempura</h2>
+                </header> 
+                <figure>
+                    <img src="img/pokeebitempura.png" alt="foto van de ebi tempura poke bowl">
+                </figure>
+                
+                <section>
+                    <h3>Poké Bowl</h3>
+                    <p class="food-info">Een lekkere Poke Bowl met ebi tempura, edamame, avocado, bosui en komkommer.</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="pokebowls" data-faved="false">
+                <header>
+                    <h2 class="food-info">Grilled Tuna</h2>
+                </header> 
+                <figure>
+                    <img src="img/pokegrilledtuna.png" alt="foto van de grilled tuna poke bowl">
+                </figure>
+                
+                <section>
+                    <h3>Poké Bowl</h3>
+                    <p class="food-info">Een lekkere Poke Bowl met gegrilde tonijn, avocado, komkommer, sesam en sushirijst.</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="pokebowls" data-faved="false">
+                <header>
+                    <h2 class="food-info">Spicy Tuna</h2>
+                </header> 
+                <figure>
+                    <img src="img/pokespicytuna.png" alt="foto van de spicy tuna poke bowl">
+                </figure>
+                
+                <section>
+                    <h3>Poké Bowl</h3>
+                    <p class="food-info">Een lekkere Poke Bowl met pittige tonijn, edamame, masago en bosui.</p>
+                    <button>Bekijk item</button>
+<button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+    
+            <article class="card" data-category="pokebowls" data-faved="false">
+                <header>
+                    <h2 class="food-info">Zalm Wasabi</h2>
+                </header> 
+                <figure>
+                    <img src="img/pokezalmwasabi.png" alt="foto van de zalm wasabi poke bowl">
+                </figure>
+                
+                <section>
+                    <h3>Poké Bowl</h3>
+                    <p class="food-info">Een lekkere Poke Bowl met zalm, avocado, edamame, masago en bosui.</p>
+                    <button>Bekijk item</button>
+                    <button class="fav-button" data-category="favoriet">⭐️ Favoriet</button>
+                </section>
+            </article>
+        </section>
+
+    </main>
+    
+</body>
+</html>

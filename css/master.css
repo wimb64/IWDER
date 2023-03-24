@@ -1,0 +1,176 @@
+:root {
+    --color-primary: #FBFFB1;
+    --color-secondary: #9FEBB4;
+    --color-tertiary: #FFACAC;
+    --color-four: #FFBFA9;
+    --color-five: #EEF5DB;
+    --color-dark: #191825;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.big-header {
+    height: 95vh;
+    width: 100%;
+    text-align: center;
+    background: url(../img/icecream.jpg) no-repeat center center fixed;
+    position: relative;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 210%;
+}
+
+.searchWrapper {
+    text-align: center;
+}
+
+#searchbar-input {
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    
+}
+
+
+
+.big-header h1 {
+    color: var(--color-five);
+    position: absolute;
+    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 240%;
+}
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-tertiary);
+}
+
+.card-container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card-container > header {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    /* flex-basis: 200px; */
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 360px;
+    background-color: var(--color-four);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0px rgba(20, 20, 80, 0.8);
+    transition: 0.2s all;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card > header {
+    height: 40px;
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-five);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 0px;
+}
+
+.card h2 {
+    font-size: 140%;
+}
+
+.card h3 {
+    margin-top: 6px;
+}
+
+.card figure {
+    height: 140px;
+    width: 100%;
+}
+
+.card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 16px;
+}
+
+.card > section {
+    height: 80%;
+    padding-left: 12px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+}
+
+.card > section > p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+.card > section > button {
+    background-color: #EEF5DB;
+    margin: 12px;
+    margin-left: 0px;
+    outline: 0px;
+    border-radius: 4px;
+    color: var(--color-dark);
+    cursor: pointer;
+    bottom: 0;
+    padding: 8px;
+    transition: 0.2s;
+    width: 100px;
+}
+
+.card button:hover {
+    background-color: var(--color-four);
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        
+    }
+
+    .card {
+       flex-basis:auto;
+       max-width: 350px;
+    }
+}
